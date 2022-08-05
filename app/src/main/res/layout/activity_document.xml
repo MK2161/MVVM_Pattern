@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.document.DocumentActivity">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiIvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_cornered_ripple"
+        android:src="@drawable/ic_course_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/uiEtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/str_search"
+        android:maxLines="1"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textDirection="locale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiImgClear"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="?selectableItemBackground"
+        android:padding="4dp"
+        android:src="@drawable/ic_close"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/uiEtSearch"
+        app:layout_constraintEnd_toEndOf="@id/uiEtSearch"
+        app:layout_constraintTop_toTopOf="@id/uiEtSearch"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uiBtnStarred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/str_starred_document"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/uiEtSearch"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uiBtnAllDocument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/str_all_document"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uiEtSearch"
+        app:layout_constraintStart_toEndOf="@+id/uiBtnStarred"
+         />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvDocuments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="No Data Found"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+   <!-- <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvStarred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="No Data Found"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uiTvDocuments" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/uiRvDocumentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uiBtnStarred"
+        tools:ignore="MissingConstraints" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/uiFabDocuments"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_add_white"
+        app:backgroundTint="#454545"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"
+        tools:ignore="ContentDescription"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_cancel_small.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable-v24/ic_star_filled_doc.xml" value="0.239" />
+        <entry key="app/src/main/res/drawable/bg_cornered_ripple.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/ic_add_white.xml" value="0.2395" />
+        <entry key="app/src/main/res/drawable/ic_cancel_small.xml" value="0.239" />
+        <entry key="app/src/main/res/drawable/ic_close.xml" value="0.2395" />
+        <entry key="app/src/main/res/drawable/ic_course_search.xml" value="0.2395" />
+        <entry key="app/src/main/res/drawable/ic_play_circle.xml" value="0.2395" />
+        <entry key="app/src/main/res/layout/activity_change_password.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_choose_option.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_document.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_document_list.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.3411458333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_menu_option.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_notification.xml" value="0.3411458333333333" />
+        <entry key="app/src/main/res/layout/activity_recyclerview_notification.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_success.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_verify_otp.xml" value="0.35625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
